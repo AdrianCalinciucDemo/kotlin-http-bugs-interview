@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.8.10"
+    kotlin("jvm") version "1.9.23"
     application
 }
 
@@ -13,4 +13,8 @@ dependencies {
 
 application {
     mainClass.set("MainKt")
+}
+
+kotlin {
+    jvmToolchain(21)
 }
